@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="top">
+        <div class="logo">
+          <img src="images/logo.png" alt="logo" />
+        </div>
+        <nav>
+          <ul>
+            <li>БАНК</li>
+            <li>БИЗНЕС</li>
+            <li>ИНВЕСТИЦИИ</li>
+            <li>СТРАХОВАНИЕ</li>
+            <li>МОБАЙЛ</li>
+            <li>ПУТЕШЕСТВИЯ</li>
+            <li>РАЗВЛЕЧЕНИЯ</li>
+          </ul>
+        </nav>
+
+        <button>ВОЙТИ</button>
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <h1>Конвертер валют онлайн</h1>
+        <div class="app">
+          <div class="input">
+            <h2>У меня есть</h2>
+            <div class="currencies current">
+              <div class="currency from-currency active" data-currency="RUB">
+                rub
+              </div>
+
+              <div class="currency from-currency" data-currency="USD">usd</div>
+
+              <div class="currency from-currency" data-currency="EUR">eur</div>
+
+              <div class="currency from-currency" data-currency="GBP">gbp</div>
+            </div>
+
+            <div class="result-box">
+              <input type="number" class="input" />
+              <p>1 RUB = 0.0135 USD</p>
+            </div>
+          </div>
+          <div class="output">
+            <h2>Хочу приобрести</h2>
+            <div class="currencies target">
+              <div class="currency to-currency" data-currency="RUB">rub</div>
+              <div class="currency to-currency active" data-currency="USD">
+                usd
+              </div>
+              <div class="currency to-currency" data-currency="EUR">eur</div>
+              <div class="currency to-currency" data-currency="GBP">gbp</div>
+            </div>
+
+            <div class="result-box">
+              <input type="text" class="output" readonly />
+              <p>1 USD = 73.8896 RUB</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+
+  background-color: white;
+  height: 100vh;
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+header {
+  background-color: #e5e5e5;
+  width: 100%;
+
+  padding: 20px 0;
+}
+
+header .top {
+  width: 1200px;
+  margin: auto;
+
+  padding: 0 30px;
+
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+nav {
+  width: 85%;
+
+  display: flex;
+  align-items: center;
+}
+
+nav ul {
+  display: flex;
+  gap: 20px;
+}
+
+li {
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 1px;
+
+  color: #959ba4;
+}
+
+button {
+  background-color: white;
+  color: black;
+
+  padding: 10px 20px;
+  border: none;
+  font-weight: bold;
+}
+
+main {
+  height: 88.5vh;
+  padding-top: 50px;
+}
+
+.container {
+  width: 50%;
+  margin: auto;
+}
+.app {
+  display: flex;
+  justify-content: space-between;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 40px;
+  margin-bottom: 32px;
+}
+
+h2 {
+  font-weight: 300;
+  color: #9f9f9f;
+  font-size: 12px;
+}
+
+.currencies {
+  margin-bottom: 30px;
+  display: flex;
+}
+
+.currencies > * {
+  border-collapse: collapse;
+  border: 1px solid #c6c6c6;
+
+  padding: 10px 20px;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.currency.active {
+  background-color: #833ae0;
+  color: #fff;
+}
+
+.result-box {
+  border: 1px solid #c6c6c6;
+  min-height: 25vh;
+  border-radius: 2px;
+
+  padding: 10px 20px 0 20px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.result-box p {
+  color: #c6c6c6;
+  font-size: 14px;
+  margin-bottom: 10px;
+  margin-top: auto;
+}
+
+input {
+  border: none;
+  outline: none;
+
+  max-width: 200px;
+  padding: 10px 0;
+  font-size: 30px;
+}
+
+input::-webkit-inner-spin-button {
+  appearance: none;
+}
